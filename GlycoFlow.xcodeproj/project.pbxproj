@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B001001 /* GlycoFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001001 /* GlycoFlowApp.swift */; };
+		B001002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001002 /* ContentView.swift */; };
+		B001003 /* GlucoseReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001003 /* GlucoseReading.swift */; };
+		B001004 /* MedicationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001004 /* MedicationLog.swift */; };
+		B001005 /* FoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001005 /* FoodEntry.swift */; };
+		B001006 /* A1CEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001006 /* A1CEstimate.swift */; };
+		B001007 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001007 /* UserProfile.swift */; };
+		B001008 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001008 /* StoreKitManager.swift */; };
+		B001009 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001009 /* HealthKitService.swift */; };
+		B001010 /* GlucoseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001010 /* GlucoseAnalytics.swift */; };
+		B001011 /* A1CCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001011 /* A1CCalculator.swift */; };
+		B001012 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001012 /* NotificationManager.swift */; };
+		B001013 /* PDFExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001013 /* PDFExporter.swift */; };
+		B001014 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001014 /* AnalyticsService.swift */; };
+		B001015 /* GlucoseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001015 /* GlucoseViewModel.swift */; };
+		B001016 /* MedicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001016 /* MedicationViewModel.swift */; };
+		B001017 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001017 /* FoodViewModel.swift */; };
+		B001018 /* ReportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001018 /* ReportsViewModel.swift */; };
+		B001019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001019 /* HomeView.swift */; };
+		B001020 /* LogReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001020 /* LogReadingView.swift */; };
+		B001021 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001021 /* HistoryView.swift */; };
+		B001022 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001022 /* TrendsView.swift */; };
+		B001023 /* MedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001023 /* MedicationView.swift */; };
+		B001024 /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001024 /* FoodLogView.swift */; };
+		B001025 /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001025 /* ReportsView.swift */; };
+		B001026 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001026 /* PaywallView.swift */; };
+		B001027 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001027 /* OnboardingView.swift */; };
+		B001028 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001028 /* SettingsView.swift */; };
+		B001030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A001030 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A000001 /* GlycoFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlycoFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A001001 /* GlycoFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlycoFlowApp.swift; sourceTree = "<group>"; };
+		A001002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A001003 /* GlucoseReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseReading.swift; sourceTree = "<group>"; };
+		A001004 /* MedicationLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationLog.swift; sourceTree = "<group>"; };
+		A001005 /* FoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
+		A001006 /* A1CEstimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1CEstimate.swift; sourceTree = "<group>"; };
+		A001007 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A001008 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		A001009 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		A001010 /* GlucoseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseAnalytics.swift; sourceTree = "<group>"; };
+		A001011 /* A1CCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1CCalculator.swift; sourceTree = "<group>"; };
+		A001012 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A001013 /* PDFExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExporter.swift; sourceTree = "<group>"; };
+		A001014 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		A001015 /* GlucoseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseViewModel.swift; sourceTree = "<group>"; };
+		A001016 /* MedicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationViewModel.swift; sourceTree = "<group>"; };
+		A001017 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		A001018 /* ReportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewModel.swift; sourceTree = "<group>"; };
+		A001019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A001020 /* LogReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogReadingView.swift; sourceTree = "<group>"; };
+		A001021 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		A001022 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
+		A001023 /* MedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationView.swift; sourceTree = "<group>"; };
+		A001024 /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
+		A001025 /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		A001026 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		A001027 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A001028 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A001029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A001030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A001031 /* GlycoFlow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GlycoFlow.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		MAINGROUP = {
+			isa = PBXGroup;
+			children = (
+				GLYCOFLOWGROUP /* GlycoFlow */,
+				PRODUCTSGROUP /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		PRODUCTSGROUP = {
+			isa = PBXGroup;
+			children = (
+				A000001 /* GlycoFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GLYCOFLOWGROUP = {
+			isa = PBXGroup;
+			children = (
+				A001001 /* GlycoFlowApp.swift */,
+				A001002 /* ContentView.swift */,
+				A001029 /* Info.plist */,
+				A001030 /* GoogleService-Info.plist */,
+				A001031 /* GlycoFlow.entitlements */,
+				MODELSGROUP /* Models */,
+				SERVICESGROUP /* Services */,
+				VIEWMODELSGROUP /* ViewModels */,
+				VIEWSGROUP /* Views */,
+			);
+			path = GlycoFlow;
+			sourceTree = "<group>";
+		};
+		MODELSGROUP = {
+			isa = PBXGroup;
+			children = (
+				A001003 /* GlucoseReading.swift */,
+				A001004 /* MedicationLog.swift */,
+				A001005 /* FoodEntry.swift */,
+				A001006 /* A1CEstimate.swift */,
+				A001007 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		SERVICESGROUP = {
+			isa = PBXGroup;
+			children = (
+				A001008 /* StoreKitManager.swift */,
+				A001009 /* HealthKitService.swift */,
+				A001010 /* GlucoseAnalytics.swift */,
+				A001011 /* A1CCalculator.swift */,
+				A001012 /* NotificationManager.swift */,
+				A001013 /* PDFExporter.swift */,
+				A001014 /* AnalyticsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		VIEWMODELSGROUP = {
+			isa = PBXGroup;
+			children = (
+				A001015 /* GlucoseViewModel.swift */,
+				A001016 /* MedicationViewModel.swift */,
+				A001017 /* FoodViewModel.swift */,
+				A001018 /* ReportsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		VIEWSGROUP = {
+			isa = PBXGroup;
+			children = (
+				A001019 /* HomeView.swift */,
+				A001020 /* LogReadingView.swift */,
+				A001021 /* HistoryView.swift */,
+				A001022 /* TrendsView.swift */,
+				A001023 /* MedicationView.swift */,
+				A001024 /* FoodLogView.swift */,
+				A001025 /* ReportsView.swift */,
+				A001026 /* PaywallView.swift */,
+				A001027 /* OnboardingView.swift */,
+				A001028 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		MAINTARGET /* GlycoFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BUILDCONFIGLIST /* Build configuration list for PBXNativeTarget "GlycoFlow" */;
+			buildPhases = (
+				C000001 /* Sources */,
+				C000002 /* Resources */,
+				C000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlycoFlow;
+			packageProductDependencies = (
+			);
+			productInstallPath = "$(HOME)/Applications";
+			productName = GlycoFlow;
+			productReference = A000001 /* GlycoFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		MAINPROJECT /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					MAINTARGET = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = PROJBUILDCONFIGLIST /* Build configuration list for PBXProject "GlycoFlow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = MAINGROUP;
+			productRefGroup = PRODUCTSGROUP /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				MAINTARGET /* GlycoFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B001030 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B001001 /* GlycoFlowApp.swift in Sources */,
+				B001002 /* ContentView.swift in Sources */,
+				B001003 /* GlucoseReading.swift in Sources */,
+				B001004 /* MedicationLog.swift in Sources */,
+				B001005 /* FoodEntry.swift in Sources */,
+				B001006 /* A1CEstimate.swift in Sources */,
+				B001007 /* UserProfile.swift in Sources */,
+				B001008 /* StoreKitManager.swift in Sources */,
+				B001009 /* HealthKitService.swift in Sources */,
+				B001010 /* GlucoseAnalytics.swift in Sources */,
+				B001011 /* A1CCalculator.swift in Sources */,
+				B001012 /* NotificationManager.swift in Sources */,
+				B001013 /* PDFExporter.swift in Sources */,
+				B001014 /* AnalyticsService.swift in Sources */,
+				B001015 /* GlucoseViewModel.swift in Sources */,
+				B001016 /* MedicationViewModel.swift in Sources */,
+				B001017 /* FoodViewModel.swift in Sources */,
+				B001018 /* ReportsViewModel.swift in Sources */,
+				B001019 /* HomeView.swift in Sources */,
+				B001020 /* LogReadingView.swift in Sources */,
+				B001021 /* HistoryView.swift in Sources */,
+				B001022 /* TrendsView.swift in Sources */,
+				B001023 /* MedicationView.swift in Sources */,
+				B001024 /* FoodLogView.swift in Sources */,
+				B001025 /* ReportsView.swift in Sources */,
+				B001026 /* PaywallView.swift in Sources */,
+				B001027 /* OnboardingView.swift in Sources */,
+				B001028 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GlycoFlow/GlycoFlow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GlycoFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appfactory.glycoflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GlycoFlow/GlycoFlow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GlycoFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appfactory.glycoflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		PROJBUILDCONFIGLIST /* Build configuration list for PBXProject "GlycoFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D000001 /* Debug */,
+				D000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BUILDCONFIGLIST /* Build configuration list for PBXNativeTarget "GlycoFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D000003 /* Debug */,
+				D000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = MAINPROJECT /* Project object */;
+}
