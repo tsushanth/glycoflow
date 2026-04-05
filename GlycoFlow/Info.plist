@@ -26,9 +26,7 @@
 	<string>GlycoFlow reads blood glucose data from Apple Health to provide insights and trends.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>GlycoFlow writes blood glucose, insulin, and carbohydrate data to Apple Health.</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>We use tracking to provide personalized content and improve your experience.</string>
-	<key>UIBackgroundModes</key>
+<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
 		<string>remote-notification</string>

@@ -29,11 +29,30 @@ final class HealthKitService {
     }
 
     func requestAuthorization() async -> Bool {
-        guard isAvailable else { return false }
+        guard isAvailable else {
+            print("[HealthKit] Not available on this device")
+            return false
+        }
+
         do {
-            try await healthStore.requestAuthorization(toShare: writeTypes, read: readTypes)
-            isAuthorized = true
-            return true
+            // Use a timeout to prevent indefinite hangs
+            try await withThrowingTaskGroup(of: Bool.self) { group in
+                group.addTask {
+                    try await self.healthStore.requestAuthorization(toShare: self.writeTypes, read: self.readTypes)
+                    return true
+                }
+                group.addTask {
+                    try await Task.sleep(nanoseconds: 30_000_000_000) // 30s timeout
+                    throw CancellationError()
+                }
+
+                if let result = try await group.next() {
+                    group.cancelAll()
+                    self.isAuthorized = result
+                    return
+                }
+            }
+            return isAuthorized
         } catch {
             print("[HealthKit] Authorization failed: \(error)")
             return false

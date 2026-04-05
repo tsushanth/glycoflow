@@ -15,6 +15,7 @@ struct SettingsView: View {
     @State private var showingReports = false
     @State private var showingMedications = false
     @State private var showingFoodLog = false
+    @State private var healthKitLoading = false
     @State private var targetLow: Double = 70
     @State private var targetHigh: Double = 180
     @State private var preferredUnit: GlucoseUnit = .mgdL
@@ -97,8 +98,11 @@ struct SettingsView: View {
                 // Integrations
                 Section("Integrations") {
                     Button {
+                        guard !healthKitLoading else { return }
+                        healthKitLoading = true
                         Task {
                             let granted = await HealthKitService.shared.requestAuthorization()
+                            healthKitLoading = false
                             if granted {
                                 AnalyticsService.shared.track(.healthKitConnected)
                             }
@@ -109,7 +113,9 @@ struct SettingsView: View {
                                 .foregroundStyle(.red)
                             Text("Connect Apple Health")
                             Spacer()
-                            if HealthKitService.shared.isAuthorized {
+                            if healthKitLoading {
+                                ProgressView()
+                            } else if HealthKitService.shared.isAuthorized {
                                 Text("Connected")
                                     .font(.caption)
                                     .foregroundStyle(.green)
@@ -120,6 +126,7 @@ struct SettingsView: View {
                         }
                     }
                     .foregroundStyle(.primary)
+                    .disabled(healthKitLoading)
                 }
 
                 // More Features
